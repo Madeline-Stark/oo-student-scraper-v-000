@@ -8,6 +8,7 @@ class Student
   def initialize(student_hash)
       student_hash.each {|key, value| self.send(("#{key}="), value)}
       #much quicker than defining each individually
+      #much quicker than defining each individually 
 
       @@all << self
   end
